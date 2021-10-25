@@ -1,5 +1,7 @@
 # Kotlin Gradle Plugin Template
 
+[![Build Status](https://drone.12oclock.dev/api/badges/camdenorrb/KotlinGradlePluginTemplate/status.svg)](https://drone.12oclock.dev/camdenorrb/KotlinGradlePluginTemplate)
+
 ### Features
 - [x] Modules
 - [x] Basic utilities
