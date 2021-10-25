@@ -1,0 +1,36 @@
+plugins {
+    kotlin("jvm") version "1.5.31"
+    id("com.github.johnrengelman.shadow") version "7.1.0"
+}
+
+group = "dev.twelveoclock"
+version = "1.0.0"
+
+repositories {
+    mavenCentral()
+    maven("https://hub.spigotmc.org/nexus/content/repositories/public/")
+}
+
+dependencies {
+
+    compileOnly("org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT")
+
+    implementation(kotlin("stdlib-jdk8"))
+    implementation("com.moandjiezana.toml:toml4j:0.7.2")
+
+    testImplementation(kotlin("test-junit5"))
+    testImplementation("com.github.seeseemelk:MockBukkit-v1.17:1.10.1")
+}
+
+
+tasks {
+    test {
+        useJUnitPlatform()
+    }
+    shadowJar {
+        relocate("kotlin", "dev.twelveoclock.plugintemplate.libs.kotlin")
+        relocate("org.jetbrains", "dev.twelveoclock.plugintemplate.libs.org.jetbrains")
+        relocate("org.intellij", "dev.twelveoclock.plugintemplate.libs.org.intellij")
+    }
+
+}
