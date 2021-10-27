@@ -63,6 +63,8 @@ class TemplatePlugin : JavaPlugin {
         }
 
         // Read config
-        pluginConfig = PluginConfig.from(Toml().read(Files.newInputStream(configPath)))
+        Files.newInputStream(configPath).use {
+            pluginConfig = PluginConfig.from(Toml().read(it))
+        }
     }
 }
