@@ -7,8 +7,12 @@ group = "dev.twelveoclock"
 version = "1.0.0"
 
 repositories {
+
     mavenCentral()
-    maven("https://hub.spigotmc.org/nexus/content/repositories/public/")
+
+    maven("https://hub.spigotmc.org/nexus/content/repositories/public/") {
+        name = "SpigotMC"
+    }
 }
 
 dependencies {
