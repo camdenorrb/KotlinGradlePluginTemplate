@@ -1,5 +1,6 @@
 # Kotlin Gradle Plugin Template
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Build Status](https://drone.12oclock.dev/api/badges/camdenorrb/KotlinGradlePluginTemplate/status.svg)](https://drone.12oclock.dev/camdenorrb/KotlinGradlePluginTemplate)
 
 ### Features
