@@ -23,7 +23,7 @@ dependencies {
     implementation("com.moandjiezana.toml:toml4j:0.7.2")
 
     testImplementation(kotlin("test-junit5"))
-    testImplementation("com.github.seeseemelk:MockBukkit-v1.17:1.10.1")
+    testImplementation("com.github.seeseemelk:MockBukkit-v1.17:1.10.3")
 }
 
 
