@@ -28,15 +28,22 @@ dependencies {
 
 
 tasks {
+
     test {
         useJUnitPlatform()
     }
+
+    // TODO: Change the second parameter to your plugin's package + the suffix.
+    //       For example, if your main package is "me.example.catplugin",
+    //       Change the second parameter for the first relocate to:
+    //       "me.example.catplugin.libs.org.jetbrains".
+    //       Then, follow this pattern to the other relocate calls.
     shadowJar {
-        relocate("kotlin", "dev.twelveoclock.plugintemplate.libs.kotlin")
         relocate("org.jetbrains", "dev.twelveoclock.plugintemplate.libs.org.jetbrains")
         relocate("org.intellij", "dev.twelveoclock.plugintemplate.libs.org.intellij")
         relocate("com.google", "dev.twelveoclock.plugintemplate.libs.com.google")
         relocate("com.moandjiezana", "dev.twelveoclock.plugintemplate.libs.com.moandjiezana")
+        relocate("kotlin", "dev.twelveoclock.plugintemplate.libs.kotlin")
     }
 
 }
