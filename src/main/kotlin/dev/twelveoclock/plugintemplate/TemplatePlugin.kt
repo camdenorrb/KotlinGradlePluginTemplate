@@ -2,8 +2,8 @@ package dev.twelveoclock.plugintemplate
 
 import com.moandjiezana.toml.Toml
 import dev.twelveoclock.plugintemplate.config.PluginConfig
-import dev.twelveoclock.plugintemplate.modules.impl.CatModule
-import dev.twelveoclock.plugintemplate.modules.impl.PlayerModule
+import dev.twelveoclock.plugintemplate.modules.CatModule
+import dev.twelveoclock.plugintemplate.modules.PlayerModule
 import org.bukkit.plugin.PluginDescriptionFile
 import org.bukkit.plugin.java.JavaPlugin
 import org.bukkit.plugin.java.JavaPluginLoader
@@ -24,10 +24,12 @@ class TemplatePlugin : JavaPlugin {
 
 
     // Constructor for MockBukkit
+    @Suppress("unused")
     constructor()
             : super()
 
     // Constructor for MockBukkit
+    @Suppress("unused")
     constructor(loader: JavaPluginLoader, description: PluginDescriptionFile, dataFolder: File, file: File)
             : super(loader, description, dataFolder, file)
 

@@ -1,6 +1,6 @@
-package dev.twelveoclock.plugintemplate.modules.impl
+package dev.twelveoclock.plugintemplate.modules
 
-import dev.twelveoclock.plugintemplate.modules.PluginModule
+import dev.twelveoclock.plugintemplate.modules.base.PluginModule
 import org.bukkit.Sound
 import org.bukkit.event.EventHandler
 import org.bukkit.event.player.PlayerJoinEvent
