@@ -35,7 +35,7 @@ tasks {
 
     // TODO: Change the second parameter to your plugin's package + the suffix.
     //       For example, if your main package is "me.example.catplugin",
-    //       Change the second parameter for the first relocate to:
+    //       change the second parameter for the first relocate to:
     //       "me.example.catplugin.libs.org.jetbrains".
     //       Then, follow this pattern to the other relocate calls.
     shadowJar {
