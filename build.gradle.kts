@@ -35,6 +35,8 @@ tasks {
         relocate("kotlin", "dev.twelveoclock.plugintemplate.libs.kotlin")
         relocate("org.jetbrains", "dev.twelveoclock.plugintemplate.libs.org.jetbrains")
         relocate("org.intellij", "dev.twelveoclock.plugintemplate.libs.org.intellij")
+        relocate("com.google", "dev.twelveoclock.plugintemplate.libs.com.google")
+        relocate("com.moandjiezana", "dev.twelveoclock.plugintemplate.libs.com.moandjiezana")
     }
 
 }
