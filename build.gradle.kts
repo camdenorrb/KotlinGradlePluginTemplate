@@ -13,6 +13,9 @@ repositories {
     maven("https://hub.spigotmc.org/nexus/content/repositories/public/") {
         name = "SpigotMC"
     }
+    maven("https://repo.papermc.io/repository/maven-public/") {
+        name = "PaperMC"
+    }
 }
 
 dependencies {
